@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 'Titillium Web', sans-serif;
+        color: white;
+        background: darkred;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .owt-3 {
+        width: 25%;
+        padding: 20px;
+        box-sizing: border-box;
+        float: left;
+    }
+    
+    h1 {
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+    
+    img {
+        height: 300px;
+    }
+    
+    .cardholder {
+        margin-top: 150px;
+        perspective: 600px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 300px;
+        background-color: transparent;
+        transform: rotateY(50deg);
+        box-shadow: -6px 5px 13px 2px rgba(0, 0, 0, 0.25);
+        transition: all 1s ease;
+        color: transparent;
+    }
+    
+    .card:hover {
+        width: 300px;
+        height: 300px;
+        background-color: transparent;
+        transform: rotateY(0deg);
+        box-shadow: 0px 0px 36px 2px rgba(0, 0, 0, 0.25);
+        color: black;
+    }
+    
+    .card:hover p {
+        background-color: white;
+    }
+    
+    p.desc {
+        position: absolute;
+        top: 10px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="owt-3">
+                <div class="cardholder">
+                    <div class="card">
+                        <img src="image/laptop.jpg" />
+                        <p class="desc">Web Designer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="owt-3">
+                <div class="cardholder">
+                    <div class="card">
+                        <img src="image/team1.png" />
+                        <p class="desc">Web Designer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="owt-3">
+                <div class="cardholder">
+                    <div class="card">
+                        <img src="image/team.jpg">
+                        <p class="desc">Web Designer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="owt-3">
+                <div class="cardholder">
+                    <div class="card">
+                        <img src="image/laptop.jpg" />
+                        <p class="desc">Web Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
